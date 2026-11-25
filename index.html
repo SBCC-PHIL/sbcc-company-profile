@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SB Construction | Company Profile</title>
+<style>
+  body {
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Arial, sans-serif;
+    background: #172b4d;
+    color: white;
+    text-align: center;
+  }
+  .container { padding: 30px; }
+  h1 { letter-spacing: 2px; }
+  .spinner {
+    width: 45px;
+    height: 45px;
+    margin: 35px auto 20px;
+    border: 5px solid #ffffff55;
+    border-top-color: white;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+  }
+  @keyframes spin {
+    to { transform: rotate(360deg); }
+  }
+  p { color: #d5dfee; }
+  a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 22px;
+    background: white;
+    color: #172b4d;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <h1>SB CONSTRUCTION</h1>
+  <p>COMPANY PROFILE</p>
+  <div class="spinner"></div>
+  <h3>Loading Company Profile...</h3>
+  <p>Please wait while we prepare your document.</p>
+  <a href="SBCC.pdf">Open PDF Manually</a>
+</div>
+
+<script>
+  setTimeout(function() {
+    window.location.href = "SBCC.pdf";
+  }, 2500);
+</script>
+</body>
+</html>
+
